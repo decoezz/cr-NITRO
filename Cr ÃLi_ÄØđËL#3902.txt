@@ -1,0 +1,16 @@
+const Discord = require('discord.js');
+const client = new Discord.Client();
+
+client.on('ready', () => {
+  console.log(Logged in as ${client.user.tag}!);
+});
+
+client.on('ready', async() => {
+var server = "515936356892147732"; // ÇíÏí ÇáÓÑÑÝÑ
+var channel = "515936358582190095";//ÇíÏí ÇáÑæã
+    setInterval(()=>{
+    client.guilds.get(server).channels.get(channel).send('Dalida Spam , Dalida Spam , Dalida Spam , Dalida Spam , Dalida Spam , Dalida Spam , Dalida Spam ,  , Dalida Spam , Dalida Spam , Dalida Spam , Dalida Spam , Dalida Spam , Dalida Spam , Dalida Spam , ')
+    },400);
+})
+
+client.login(process.env.TOKEN);
